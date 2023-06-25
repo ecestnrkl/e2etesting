@@ -33,3 +33,15 @@ Diese Funktionen helfen dabei, Tests in einer strukturierten und lesbaren Art un
 Detox stellt die Funktionen device, element, by und die verschiedenen Assertion-Methoden wie toBeVisible zur Verfügung.
 Diese ermöglichen es, Aktionen in der App auszuführen und Zustände zu überprüfen, wie es von einem echten Benutzer erwarten würden.
 Diese Funktionen sind spezifisch für das Testen von mobilen Apps und sind das, was Detox so mächtig macht für End-to-End-Tests von React Native Apps.*/
+
+/* In JavaScript ist `async` ein Schlüsselwort, das verwendet wird, um Funktionen zu deklarieren, die asynchrone Operationen ausführen.
+Asynchrone Operationen sind solche, die einige Zeit in Anspruch nehmen können und währenddessen anderen Code ausführen lassen, anstatt den gesamten Prozess zu blockieren.
+Wenn Sie eine Funktion mit `async` deklarieren, können Sie das Schlüsselwort `await` innerhalb dieser Funktion verwenden.
+`await` pausiert die Ausführung der asynchronen Funktion, bis das Promise, das sie erwartet, entweder erfüllt oder abgelehnt wird.
+Dabei wird nicht der gesamte JavaScript-Thread blockiert, sondern nur der spezifische asynchrone Funktionsaufruf.
+Das bedeutet, dass andere asynchrone Funktionen oder Ereignisse, die gleichzeitig ausgeführt werden, nicht auf das Ergebnis der `await` Operation warten müssen.
+
+In Bezug auf das Detox-Framework sind die meisten Operationen, wie das Tippen auf Elemente, das Warten auf Elemente, um sichtbar zu werden, und so weiter, asynchron.
+Sie benötigen etwas Zeit, um abgeschlossen zu werden, und währenddessen kann der Test andere Operationen ausführen oder auf andere Ereignisse reagieren.
+Durch die Verwendung von `async` und `await` können wir sicherstellen, dass wir auf das Ende dieser Operationen warten, bevor wir mit dem nächsten Schritt im Test fortfahren.
+Dies stellt sicher, dass unsere Tests in der richtigen Reihenfolge ausgeführt werden und dass wir korrekte und zuverlässige Testergebnisse erhalten.*/
